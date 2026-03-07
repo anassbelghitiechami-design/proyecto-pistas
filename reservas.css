@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+.efecto.fondo {
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+    border-bottom: 1px solid rgba(204, 255, 0, 0.5); 
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.pintalo-de-color-amarillo-lima {
+    width: 180px;
+    height: auto;
+ flex-shrink: 0;
+}
+
+h1 {
+    font-size: 28px; 
+    color: #ccff00; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    flex-grow: 1;         
+    text-align: center;     
+    margin-right: 130px;
+   
+}
+
+.padelfoto {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.6; 
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+.reserva {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.step-card {
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    backdrop-filter: blur(15px); 
+    color: #ffffff; 
+    width: 500px;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #ccff00; 
+}
+
+.option, .Disponibles, .cerrado {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #262626;
+    transition: 0.3s; /* Para que el cambio de color sea suave */
+}
+
+.option.active {
+    background-color: #ccff00;
+    color: #000000;
+    border-color: #ccff00;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(204, 255, 0, 0.5); 
+}
+.option:hover, 
+.Disponibles:hover {
+    transform: translateY(-8px); 
+    border-color: #ccff00;
+    background: rgba(204, 255, 0, 0.1); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.Disponibles {
+    border-color: #ccff00;
+    background-color: #2b2c27;
+    color: #ccff00;
+}
+
+.cerrado {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+h6 {
+    font-size: 15px;
+    color: #ffffff; 
+    margin: 10px 0;
+}
+
+h6 span {
+    color: #ccff00; 
+}
+
+h5, .precio {
+    font-size: 20px;
+    color: #ccff00; 
+    margin-top: 20px;
+}
+
+.precio span {
+    color: #ffffff; 
+    font-weight: bold;
+}
