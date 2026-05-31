@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>A3pistas</title> 
-    <link rel="stylesheet" href="pistas.css">
+    <link rel="stylesheet" href="pistas1.css">
 </head>
 <body>
 
@@ -28,11 +28,10 @@
 
 
 
-                <div>
-                    <a href="login.html" style="text-decoration: none;">
-    <button class="acceder">cerrar</button>
-  </a>
-                </div>
+               <div>
+    <a href="login.php" class="acceder">Cerrar sesión</a>
+</div>
+
 
             </div>
         </nav>

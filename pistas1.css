@@ -1,3 +1,4 @@
+
 .a3pistas {
     margin-left: 15px;
     margin-top: -0px;
@@ -39,6 +40,7 @@ body {
     justify-content: center;
     margin-left: 20px;
 }
+
 
 
          
@@ -111,4 +113,90 @@ header {
     align-items: center;
     margin-bottom: 12px;
     border-radius: 3px;
+
 }   
+
+
+#instalaciones {
+  
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+.grid-instalaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 270px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 2px solid transparent; 
+    margin-top: 40px;
+    flex-grow: 1;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen no se deforme */
+    display: block;
+    
+}
+
+
+.card::after {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+     z-index: 1;
+     
+}
+
+.info-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    z-index: 2;
+    color: white;
+    background: linear-gradient(to top, black 70%, transparent 100%); /* Para resaltar el texto pone fondo negro */
+}
+
+.info-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #bfff00; 
+    margin-bottom: 10px;
+  
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    border-color: #bfff00; 
+    box-shadow: 0 10px 30px rgba(191, 255, 0, 0.3); 
+}
